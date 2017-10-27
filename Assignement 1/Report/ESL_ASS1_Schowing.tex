@@ -1,0 +1,278 @@
+\documentclass[11pt,a4paper,twoside,openright]{report}
+
+% Packages 
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{afterpage}
+\usepackage{cite}
+\usepackage{longtable}
+
+\usepackage[section]{placeins}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{booktabs} % To thicken table lines
+\usepackage{pgfplotstable}
+\usepackage[final]{pdfpages}
+
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{minitoc}
+
+\usepackage{cleveref}
+
+\usepackage{geometry} 
+
+
+
+\lstset{frame=tb,
+	language=R,
+	keywordstyle=\color{blue},
+	alsoletter={.}
+}
+
+\usepackage{enumitem}
+\renewcommand\descriptionlabel[1]{\textbf{#1 :}}
+
+\usepackage{subfig}
+\usepackage{graphicx}
+
+\usepackage{array}
+
+% Evite les gros début de chapitre inutiles. 
+\usepackage{titlesec}
+
+% niveaux de table des matières
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% Liste des abréviations
+\usepackage{nomencl} 
+\makenomenclature 
+\renewcommand{\nomname}{Liste des abréviations}% Pour redéfinir le titre De cette liste
+
+
+
+
+
+\makeatletter
+
+\newif\if@mainmatter \@mainmattertrue
+
+\newcommand\frontmatter{%
+	\cleardoublepage
+	\@mainmatterfalse
+	\pagenumbering{roman}}
+\newcommand\mainmatter{%
+	\cleardoublepage
+	\@mainmattertrue
+	\pagenumbering{arabic}}
+\newcommand\backmatter{%
+	\if@openright
+	\cleardoublepage
+	\else
+	\clearpage
+	\fi
+	% \@mainmatterfalse
+}
+\makeatother
+
+
+\titleformat{\chapter}
+{\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+% Modification de commandes 
+
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{-1}%
+	\newpage}
+
+\graphicspath{ {img/} }
+
+
+\author{Thibault Schowing}
+
+
+\usepackage{fancyhdr,graphicx,lastpage}% http://ctan.org/pkg/{fancyhdr,graphicx,lastpage}
+\fancypagestyle{plain}{
+	\fancyhf{}% Clear header/footer
+	\fancyhead[R]{Thibault Schowing}% Right header
+	\fancyhead[L]{Elements of Stastical Learning WS2017/2018}% Left footer
+	\fancyfoot[R]{\thepage}% Right footer
+}
+
+
+
+
+
+\begin{document}
+	% Ordre de préférence:
+	% a) La page de couverture
+	% b) Le cahier des charges
+	% c) La table des matières
+	% d) Le résumé
+	% e) L'introduction
+	% f) Le corps du rapport
+	% g) La conclusion
+	% h) La bibliographie
+	% -i) La liste des symboles et abréviations utilisés
+	% -j) La liste des figures
+	% -k) Les annexes
+	% -l) Le journal de travail
+	
+	% Page de titre
+	\pagestyle{plain}% Set page style to plain.
+
+	\newgeometry{hmarginratio=1:1}
+	
+	\pagenumbering{gobble}
+	
+	\begin{titlepage}
+		\centering
+		
+		%\vspace{0.5cm}
+		\small{Saarland University  \par}
+		\huge{The Elements of Stastical Learning\par}
+		\vspace{1cm}
+		
+		
+		
+		\vspace{1cm}
+		\Large{Assignement 1\par}
+		\vspace{1.5cm}
+		\small{Due Date: 08.11.2017  \par}
+		\vspace{1cm}
+		
+		
+		
+		\vspace{2cm}
+		\small\textit{Thibault \textsc{Schowing}}\par
+		
+		\small{\today\par}
+		
+		\vfill
+		
+		
+	\end{titlepage}
+	% Geometry centrée pour page de titre: off
+	\restoregeometry 
+	%\afterpage{\blankpage}
+	
+	
+	\mainmatter
+	
+	
+	\section*{Problem 1}
+	
+	Statistical learning is divided in two main groups: Supervised and Unsupervised learning. \\
+	
+	
+	\noindent Supervised learning will try to find a prediction function from data. In those data we have one or more input variables, also called inputs, features, predictors or independent variables and usually one output variable, called outcome, response or dependent variables. The prediction can be whether regression, if the response variable is a quantitative variable or classification, if the response variable is a qualitative (or categorical) variable. Estimating those output variables means making a prediction.\\
+	
+	
+	\noindent In order to test the model and to know its performance, we usually separate the model in two parts: Training data and test data. Training data will be used to create and train the model. Test data will have the role of new data, not used in the training phase, to test the efficiency of the model. Repeating the train-test operation with different groups of train-test data is called cross-validation.\\
+	
+	
+	\noindent Once we have a prediction function, we might want to understand the relations between the variables in order to find unknown relations in the data. This is inference. Often, if a prediction model is very accurate, it will be harder to interpret.\\
+	
+	
+	\noindent To estimate the prediction function, we can use parametric or non-parametric methods. With the parametric method, we take a classical functional form (like linear, quadratic…) and fit the function my adjusting the function’s parameters.  For the non-parametric method, we have more freedom in choosing the form but we have to choose a lot of parameters that requires a lot of observation and there is a risk of over-fitting (modelling the noise). \\
+	
+	
+	\noindent Unsupervised learning is used when there is no output data. The goal is to find different groups (or clusters) in the data by finding relationships between the variables or the observations. \\
+	
+	
+	\section*{Problem 2}
+	
+	
+	Show that:
+	
+	\[ E(Y) = argmin_{c}E[(Y-c)^2] \]
+	
+	We are looking to proof that the value of $c$ for which $E[(Y-c)^2]$ attains its minimum is $E(Y)$.\\\\
+	
+	
+	Development:\\\\
+	 
+	
+	$ (Y-c)^2 = Y^2 - 2cY + c^2 $\\\\
+	
+	
+	
+	$ E[(Y-c)^2] = E[Y^2 - 2cY + c^2] = E[Y^2] - 2cE[Y] + c^2	$\\\\
+	
+	 We assume here that $c$ is a constant, and so the derivative is: \\\\
+	 
+	 
+	$ \dfrac{d}{dc}E[Y^2] - 2cE[Y] + c^2 = -2E(Y) + 2c $ \\\\
+	
+	We equal it to zero and obtain:\\\\
+	
+	$2c = 2E(Y)$ and so $c = E(Y)$ which show that the first statement is true. \\\\
+	
+	
+	What is the practical benefit of this equation when using the squared error as error metric?\\
+	
+	
+	??????????????????????????????????
+	
+	
+	
+	
+	\section*{Problem 3}
+	
+	Prove the bias-variance trade-off with irreducible error:\\\\
+	
+	
+	
+	$E[(y_{0} - \hat{f}(x_{0}) - E(\hat{f}(x_{0})))^2] + [E(\hat{f}(x_{0}) - f(x_{0})]^2 + Var(\epsilon) =$\\\\
+	
+	$Var(\hat{f}(x_{0})) + [Bias(\hat{f}(x_{0}))] + Var(\epsilon)$\\
+	\\\\
+	
+	% https://en.wikipedia.org/wiki/Variance
+	
+	One of the properties of variance is that $ Var(X) = E[X^2] - (E[X]^2) $\\
+	
+	
+%	We can also state that $ MSE = E(y_{0} - \hat{f}(x_{0}))^2$
+	
+	We replace $X$ with $y_{0} - \hat{f}(x_{0})$ and so obtain that $Var(y_{0} - \hat{f}(x_{0})) = E[(y_{0} - \hat{f}(x_{0}))^2] - (E[y_{0} - \hat{f}(x_{0})]^2)$.\\\\
+	
+	In this equation we recognize that $E[y_{0} - \hat{f}(x_{0})]^2 = MSE$\\\\
+	
+	And we also have $Bias = E[y_{0} - \hat{f}(x_{0})]$ which means that $()^2$
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
