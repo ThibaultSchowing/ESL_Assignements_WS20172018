@@ -25,7 +25,7 @@
 
 
 \usepackage[hidelinks]{hyperref}
-\usepackage{minitoc}
+%\usepackage{minitoc}
 
 \usepackage{cleveref}
 
@@ -54,37 +54,6 @@
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
-% Liste des abréviations
-\usepackage{nomencl} 
-\makenomenclature 
-\renewcommand{\nomname}{Liste des abréviations}% Pour redéfinir le titre De cette liste
-
-
-
-
-
-\makeatletter
-
-\newif\if@mainmatter \@mainmattertrue
-
-\newcommand\frontmatter{%
-	\cleardoublepage
-	\@mainmatterfalse
-	\pagenumbering{roman}}
-\newcommand\mainmatter{%
-	\cleardoublepage
-	\@mainmattertrue
-	\pagenumbering{arabic}}
-\newcommand\backmatter{%
-	\if@openright
-	\cleardoublepage
-	\else
-	\clearpage
-	\fi
-	% \@mainmatterfalse
-}
-\makeatother
-
 
 \titleformat{\chapter}
 {\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
@@ -98,16 +67,16 @@
 	\addtocounter{page}{-1}%
 	\newpage}
 
-\graphicspath{ {img/} }
+%\graphicspath{{img}}
 
 
-\author{Thibault Schowing}
+\author{Thibault Schowing and Sarah Mcleod}
 
 
 \usepackage{fancyhdr,graphicx,lastpage}% http://ctan.org/pkg/{fancyhdr,graphicx,lastpage}
 \fancypagestyle{plain}{
 	\fancyhf{}% Clear header/footer
-	\fancyhead[R]{Thibault Schowing}% Right header
+	\fancyhead[R]{Thibault Schowing and Sarah Mcleod}% Right header
 	\fancyhead[L]{Elements of Stastical Learning WS2017/2018}% Left footer
 	\fancyfoot[R]{\thepage}% Right footer
 }
@@ -116,21 +85,7 @@
 
 
 
-\begin{document}
-	% Ordre de préférence:
-	% a) La page de couverture
-	% b) Le cahier des charges
-	% c) La table des matières
-	% d) Le résumé
-	% e) L'introduction
-	% f) Le corps du rapport
-	% g) La conclusion
-	% h) La bibliographie
-	% -i) La liste des symboles et abréviations utilisés
-	% -j) La liste des figures
-	% -k) Les annexes
-	% -l) Le journal de travail
-	
+\begin{document}	
 	% Page de titre
 	\pagestyle{plain}% Set page style to plain.
 
@@ -158,6 +113,7 @@
 		
 		\vspace{2cm}
 		\small\textit{Thibault \textsc{Schowing}}\par
+		\small\textit{Sarah \textsc{Mcleod}}\par
 		
 		\small{\today\par}
 		
@@ -170,27 +126,19 @@
 	%\afterpage{\blankpage}
 	
 	
-	\mainmatter
-	
 	
 	\section*{Problem 1}
 	
-	Statistical learning is divided in two main groups: Supervised and Unsupervised learning. \\
+	Statistical learning is the process of learning from data. The majority of statistical learning can be divided into two categories: \textbf{Supervised Learning} and \textbf{Unsupervised learning}. In Supervised Learning, you have \textbf{inputs} as well as the corresponding \textbf{outcomes} that serve to direct the learning process. The goal is to estimate some unknown function $f$, which serves as the information about the relationship between inputs and outputs. In Unsupervised Learning we observe only the predictors; the responses are not available. The goal of unsupervised learning is to discover something about the data, for example how it groups together. For this reason it is often referred to as Clustering. \\
 	
 	
-	\noindent Supervised learning will try to find a prediction function from data. In those data we have one or more input variables, also called inputs, features, predictors or independent variables and usually one output variable, called outcome, response or dependent variables. The prediction can be whether regression, if the response variable is a quantitative variable or classification, if the response variable is a qualitative (or categorical) variable. Estimating those output variables means making a prediction.\\
+	\noindent Supervised Learning is used for \textbf{inference} and \textbf{prediction}. In Prediction the goal is to estimate some unknown function f so as to accurately predict some output given a new input. This can be done for \textbf{quantitative} values, which is known as \textbf{regression} (on continuous values), or for \textbf{qualitative} (or categorical) values, which is referred to as \textbf{classification}.\\
 	
 	
-	\noindent In order to test the model and to know its performance, we usually separate the model in two parts: Training data and test data. Training data will be used to create and train the model. Test data will have the role of new data, not used in the training phase, to test the efficiency of the model. Repeating the train-test operation with different groups of train-test data is called cross-validation.\\
+	\noindent When talking about supervised learning it's also important to discuss \textbf{training data} and \textbf{test data}. The training data is used, as the name suggests, to train a statistical model. Test data are data that have not been given to the model during training and are used to test the performance of that model.\\
 	
 	
-	\noindent Once we have a prediction function, we might want to understand the relations between the variables in order to find unknown relations in the data. This is inference. Often, if a prediction model is very accurate, it will be harder to interpret.\\
-	
-	
-	\noindent To estimate the prediction function, we can use parametric or non-parametric methods. With the parametric method, we take a classical functional form (like linear, quadratic…) and fit the function my adjusting the function’s parameters.  For the non-parametric method, we have more freedom in choosing the form but we have to choose a lot of parameters that requires a lot of observation and there is a risk of over-fitting (modelling the noise). \\
-	
-	
-	\noindent Unsupervised learning is used when there is no output data. The goal is to find different groups (or clusters) in the data by finding relationships between the variables or the observations. \\
+	\noindent The methods used to estimate $f$ can be categorized as \textbf{parametric} or \textbf{non-parametric}. Parametric methods make the assumption that the unknown function is linear, and use linear methods to estimate it. Non-parametric methods make no assumptions about the underlying form of $f$, and thus can use methods that are much more complicated and have many more degrees of freedom.\\
 	
 	
 	\section*{Problem 2}
@@ -221,11 +169,7 @@
 	
 	$2c = 2E(Y)$ and so $c = E(Y)$ which show that the first statement is true. \\\\
 	
-	
-	What is the practical benefit of this equation when using the squared error as error metric?\\
-	
-	
-	??????????????????????????????????
+
 	
 	
 	
@@ -252,27 +196,157 @@
 	
 	In this equation we recognize that $E[y_{0} - \hat{f}(x_{0})]^2 = MSE$\\\\
 	
-	And we also have $Bias = E[y_{0} - \hat{f}(x_{0})]$ which means that $()^2$
+	And we also have $Bias = E[y_{0} - \hat{f}(x_{0})]$.
 	
 	
 	
 	
 	
+	\section*{Problem 4}
+	\subsection*{b}
+	
+	\paragraph{Data repartition} Train and testset.\\
 	
 	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline 
+			& \textbf{Observations} \\ 
+			\hline 
+			Testset & 31 \\ 
+			\hline 
+			Trainset & 80 \\ 
+			\hline 
+			Total & 111 \\ 
+			\hline 
+		\end{tabular} 
+	\end{table}
+
+
+\paragraph{Data types}  There is four columns, in this work "ozone" is considered to be the output.\\
+
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|}
+			\hline 
+			\textbf{Data} & \textbf{Data Type}\\ 
+			\hline 
+			ozone & Numerical \\ 
+			\hline 
+			radiation & Integer \\ 
+			\hline 
+			temperature & Integer \\ 
+			\hline 
+			wind & Numerical \\ 
+			\hline 
+		\end{tabular} 
+	\end{table}
 	
 	
+	\subsection*{c}
 	
+	 
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{|c|c|c|c|}
+			\hline 
+			& Range & Mean & SD \\ 
+			\hline 
+			Ozone & 1:168 & 42.099099 & 33.275969 \\ 
+			\hline 
+			Radiation & 7:334 & 184.801802 & 91.152302 \\ 
+			\hline 
+			Temperature & 57:97 & 77.792793 & 9.529969 \\ 
+			\hline 
+			Wind & 2.3:20.7 & 9.938739 & 3.559218 \\ 
+			\hline 
+		\end{tabular} 
+	\end{table}
 	
+\subsection*{d}
+
+The range of the Pearson correlation coefficient is between $-1$ and $1$. A coefficient of $1$ means that the variables have a total positive linear correlation, a $0$ means that there is no linear correlation and a $-1$ means that there is a total negative linear correlation. One can see in table \ref{tbl:pearson} that each variable has a total positive linear correlation with itself (obviously). \\
+
+When we look at the graphs below and the Pearson correlations, we can see a relation between wind and ozone, that gives the impression of a negative sloped line and between temperature and ozone  but positively this time. The coefficients confirm what we see on the graph. The two related pairs present high coefficients. We have $-0.61$ for the wind-ozone pair and $0.69$ for the ozone-temperature pair. 
 	
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{"img/ScatterplotByPair"}
+	\caption{Scatter-plots between each variables.}
+	\label{fig:scatterplotbypair}
+\end{figure}
 	
+
+
+\begin{table}[H]
+	\centering
+	\label{tbl:pearson}
+	\begin{tabular}{lllll}
+		& ozone      & radiation  & temperature & wind       \\
+		ozone       & 1.0000000  & 0.3483417  & 0.6985414   & -0.6129508 \\
+		radiation   & 0.3483417  & 1.0000000  & 0.2940876   & -0.1273656 \\
+		temperature & 0.6985414  & 0.2940876  & 1.0000000   & -0.4971459 \\
+		wind        & -0.6129508 & -0.1273656 & -0.4971459  & 1.0000000 
+	\end{tabular}
+	\caption{Pearson Correlation between the features}
+\end{table}
 	
-	
-	
-	
-	
-	
-	
+\subsection*{f}
+
+Ozone prediction using a linear regression model. \\
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"img/RplotOzone"}
+	\caption{Predicted and true values of ozone for the test set}
+	\label{fig:rplotozone}
+\end{figure}
+
+
+\textbf{RSS}: 8208.509\\
+
+\textbf{Pearson} Correlation between predictions and true responses: 0.8268958. 
+
+
+
+
+\subsection*{g}
+
+ 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"img/RplotRSS"}
+	\caption{RSS for training and test set and for each k.}
+	\label{fig:rplotrss}
+\end{figure}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"img/RplotRSSNormalized"}
+	\caption{Normalized RSS for training and test sets.}
+	\label{fig:rplotrssnormalized}
+\end{figure}
+
+
+
+
+%  On which side of the graph do you have the most complex models?
+The more complex models will be on the right hand side of the graph. This is due to the fact that the model will fit all the tiny changes in the data, each time a new point is added. Consequently it will lead to a high variance and a low bias. For this data, we would choose a k value around 6, minimising the RSS, as we can see on the graphs (normalized and not). \\
+
+\noindent KNN doesn't make any assumption on the underlying data distribution. It is a non-parametric learning algorithm. 
+
+% Argue with the bias-variance tradeof
+
+% Which value of k would you choose for this data?
+
+% In general, does the kNN method make any assumptions on the underlying data distribution?
+
+
+
+
 	
 	
 \end{document}
