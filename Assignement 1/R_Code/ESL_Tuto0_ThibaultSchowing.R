@@ -2,12 +2,12 @@
 # Elements of Statistical Learning WS2017/2018
 # Assignement 1
 #
-#
+# Thibault Schowing & Sarah Mcleod
 #
 #
 #
 
-# CAUTION: Reset the environement variables and set a specific working environement
+# CAUTION: Next lines empty the environement variables and set a specific working environement
 
 rm(list=ls())
 
@@ -15,7 +15,7 @@ rm(list=ls())
 # I don't know how to automaticaly set the WD according to the source file location.. 
 # so let's each have our own directory and change it whenever we want to execute the script
 
-workingDirectory = 'C:\Users\thsch\Desktop\ESL_Assignements_WS20172018\Assignement 1\R_Code'
+workingDirectory = 'C:/Users/thsch/Desktop/ESL_Assignements_WS20172018/Assignement 1/R_Code'
 #workingDirectory = ''
 
 setwd(workingDirectory)
@@ -106,7 +106,8 @@ pairs(~ozone+radiation+temperature+wind,data = ozone,
 
 # Save the file.
 dev.off()
-# Direct display in R
+
+# For a direct display in R
 pairs(~ozone+radiation+temperature+wind,data = ozone,
       main = "Scatterplot Matrix")
 
