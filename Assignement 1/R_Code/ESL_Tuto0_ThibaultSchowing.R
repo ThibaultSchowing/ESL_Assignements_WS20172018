@@ -41,6 +41,7 @@ colnames(ozone)
 
 
 
+
 # Ozone: continuous
 # Radiation: continuous
 # Temperature: continuous
@@ -81,6 +82,8 @@ apply(ozone, 2, sd)
 
 #=========================================
 #  D
+#  Create scatterplots for every pair of 
+#  features
 #=========================================
 
 # Scatterplots
@@ -101,21 +104,19 @@ plot(x = ozone[,1],
 # Give the chart file a name. If you don't want to save the file, ignore the png() and the dev.off().
 png(file = "scatterplot_matrices.png")
 
-pairs(~ozone+radiation+temperature+wind,data = ozone,
+pairs(ozone,
       main = "Scatterplot Matrix")
 
 # Save the file.
 dev.off()
 
 # For a direct display in R
-pairs(~ozone+radiation+temperature+wind,data = ozone,
+pairs(ozone,
       main = "Scatterplot Matrix")
 
 
 # Pearson Correlation
-
-df = data.frame(ozone)
-cor(df)
+cor(ozone)
 
 
 #=========================================
@@ -126,22 +127,11 @@ cor(df)
 # Source: https://en.wikipedia.org/wiki/Residual_sum_of_squares
 
 
-rssCustom <- function(predicted, real){
-  
-  # Verify that number of predicted values and real values are the same
-  if(length(predicted) != length(real)){
-    print("Error: vectors are not the same size")
-    return("Error")
-  }
-  
-  RSS <- 0
-  
-  for(i in 1:length(predicted)){
-    #WRONG
-    RSS = RSS + ((real[i] - predicted[i])^2)
-  }
-  
-  return(RSS)
+# RSS function univariate
+RSS <- function(y_true,y_predicted){
+  #print(dim(y_true))
+  res <- sum((y_true - y_predicted)^2)
+  return(res)
 }
 
 
@@ -152,28 +142,29 @@ rssCustom <- function(predicted, real){
 
 
 
-model = lm(ozone ~ wind+temperature+radiation, data=ozone[trainset,])
+# Now fit a linear model using lm()
+t_data <- ozone[trainset,]
+lm_fit <- lm(t_data$ozone ~ t_data$radiation + t_data$temp + t_data$wind)
 
-summary(model)
+# format test data
+t_data <- ozone[testset,]
+lm_predict <- predict(lm_fit, t_data[,2:4],interval="prediction")
 
-Y_pred = predict(model, newdata = ozone[testset,])
+# RSS for predictions and true responses.
+RSS(t_data$ozone,lm_predict[,1])
 
-# Report the RSS ???????????
+# Pearson correlation of predictions and true responses.
+cor(lm_predict[,1],t_data$ozone)
 
-rssValue = rssCustom(Y_pred, ozone[testset,1])
-print(rssValue)
+# Plot true values v.s. predicted values
+plot(t_data[,1],lm_predict[,1], 
+     pch = 15, col = c("red","blue"),
+     xlab = "true ozone values", ylab = "predicted ozone values")
 
-deviance(model)
-
-sum(resid(model)^2)
-
-anova(model)
-
-with(summary(model), df[2] * sigma^2)
-
-# Report the Correlation ???
-
-
+# add legend
+legend(max(t_data[,1]), legend=c("true values","predicted values"),
+       col = c("red","blue"),
+       lty=1)
 
 
 #=========================================
@@ -182,49 +173,48 @@ with(summary(model), df[2] * sigma^2)
 
 # Perform KNN 
 
-
 #install.packages("FNN")
-library("FNN")
 
 
-train = ozone[trainset,]
-test = ozone[testset,]
 
-#Response of each observation in training set
-y = ozone[trainset,1]
 
-nb_neighbour = 30
+library(FNN)
+k = 30
+# Initialize to hold KNN predictions
+knn_predictions_train <- matrix(nrow=k,ncol=length(trainset))
+knn_predictions_test <- matrix(nrow=k,ncol=length(testset))
 
-results <- matrix(nrow=nb_neighbour, ncol=2)
-
-for (k in 1:nb_neighbour){
-  
-  # KNN with k neighbours
-  res = knn.reg(train, test = test, y, k = k)
-  
-  # Calculate RSS (Verify function)
-  #
-  # RSS inputs: - Real values
-  #             - Predicted values
-  
-  rss_k = rssCustom(test$ozone,res$pred)
-  cat("\n\nk = " , k , "    Rss = " , rss_k)
-  
-  results[k,1] = k
-  results[k,2] = rss_k
-  
-  
+# KNN for k =1:30 
+for(i in 1:k){
+  knn_reg <- knn.reg(ozone[trainset,2:4],ozone[trainset,2:4],ozone[trainset,1], k=i)
+  knn_predictions_train[i,] <- knn_reg$pred
+  knn_reg2 <- knn.reg(ozone[trainset,2:4],ozone[testset,2:4],ozone[trainset,1], k=i)
+  knn_predictions_test[i,] <- knn_reg2$pred
 }
 
-results
-plot(results, xlab="k neighbours", ylab="RSS")
+# RSS on training and test for every K
+rss_train <- vector(length = k)
+rss_test <- vector(length = k)
+for(i in 1:k){
+  #print(i)
+  rss_train[i] <- RSS(ozone[trainset,1],knn_predictions_train[i,])
+}
+for(i in 1:k){
+  rss_test[i] <- RSS(ozone[testset,1],knn_predictions_test[i,])
+}
 
-res = knn.reg(train, test = test, y, k = 5)
+# Plot unnormalized train and test reusults
+library(ggplot2)
+plot_data <- data.frame(k=1:30,test=rss_test,train=rss_train)
+ggplot(plot_data, aes(k, RSS)) + 
+  geom_line(aes(y=train, color = "train")) +
+  geom_line(aes(y=test, color = "test"))
 
-
-rss_k = rssCustom(test$ozone,res$pred)
-
-
+# Plot normalized, since it makes me happy.
+plot_data <- data.frame(k=1:30,test=rss_test/length((testset)),train=rss_train/length((trainset)))
+ggplot(plot_data, aes(k, Normalized_RSS)) + 
+  geom_line(aes(y=train, color = "train")) +
+  geom_line(aes(y=test, color = "test"))
 
 
 
