@@ -1,1 +1,256 @@
 
+\documentclass[11pt,a4paper,twoside,openright]{report}
+
+% Packages 
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{afterpage}
+\usepackage{cite}
+\usepackage{longtable}
+
+\usepackage[section]{placeins}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage{booktabs} % To thicken table lines
+\usepackage{pgfplotstable}
+\usepackage[final]{pdfpages}
+
+
+\usepackage[hidelinks]{hyperref}
+\usepackage{minitoc}
+
+\usepackage{cleveref}
+
+\usepackage{geometry} 
+
+
+
+\lstset{frame=tb,
+	language=R,
+	keywordstyle=\color{blue},
+	alsoletter={.}
+}
+
+\usepackage{enumitem}
+\renewcommand\descriptionlabel[1]{\textbf{#1 :}}
+
+\usepackage{subfig}
+\usepackage{graphicx}
+
+\usepackage{array}
+
+% Evite les gros début de chapitre inutiles. 
+\usepackage{titlesec}
+
+% niveaux de table des matières
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+
+% Liste des abréviations
+\usepackage{nomencl} 
+\makenomenclature 
+\renewcommand{\nomname}{Liste des abréviations}% Pour redéfinir le titre De cette liste
+
+
+
+
+
+\makeatletter
+
+\newif\if@mainmatter \@mainmattertrue
+
+\newcommand\frontmatter{%
+	\cleardoublepage
+	\@mainmatterfalse
+	\pagenumbering{roman}}
+\newcommand\mainmatter{%
+	\cleardoublepage
+	\@mainmattertrue
+	\pagenumbering{arabic}}
+\newcommand\backmatter{%
+	\if@openright
+	\cleardoublepage
+	\else
+	\clearpage
+	\fi
+	% \@mainmatterfalse
+}
+\makeatother
+
+
+\titleformat{\chapter}
+{\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+% Modification de commandes 
+
+\newcommand\blankpage{%
+	\null
+	\thispagestyle{empty}%
+	\addtocounter{page}{-1}%
+	\newpage}
+
+\graphicspath{ {img/} }
+
+
+\author{Thibault Schowing}
+
+
+\usepackage{fancyhdr,graphicx,lastpage}% http://ctan.org/pkg/{fancyhdr,graphicx,lastpage}
+\fancypagestyle{plain}{
+	\fancyhf{}% Clear header/footer
+	\fancyhead[R]{Thibault Schowing}% Right header
+	\fancyhead[L]{Elements of Stastical Learning WS2017/2018}% Left footer
+	\fancyfoot[R]{\thepage}% Right footer
+}
+
+
+
+
+
+\begin{document}
+	% Ordre de préférence:
+	% a) La page de couverture
+	% b) Le cahier des charges
+	% c) La table des matières
+	% d) Le résumé
+	% e) L'introduction
+	% f) Le corps du rapport
+	% g) La conclusion
+	% h) La bibliographie
+	% -i) La liste des symboles et abréviations utilisés
+	% -j) La liste des figures
+	% -k) Les annexes
+	% -l) Le journal de travail
+	
+	% Page de titre
+	\pagestyle{plain}% Set page style to plain.
+
+	\newgeometry{hmarginratio=1:1}
+	
+	\pagenumbering{gobble}
+	
+	\begin{titlepage}
+		\centering
+		
+		%\vspace{0.5cm}
+		\small{Saarland University  \par}
+		\huge{The Elements of Stastical Learning\par}
+		\vspace{1cm}
+		
+		
+		
+		\vspace{1cm}
+		\Large{Assignement 1\par}
+		\vspace{1.5cm}
+		\small{Due Date: 08.11.2017  \par}
+		\vspace{1cm}
+		
+		
+		
+		\vspace{2cm}
+		\small\textit{Thibault \textsc{Schowing}}\par
+		
+		\small{\today\par}
+		
+		\vfill
+		
+		
+	\end{titlepage}
+	% Geometry centrée pour page de titre: off
+	\restoregeometry 
+	%\afterpage{\blankpage}
+	
+	
+	\mainmatter
+	
+	
+	\section*{Problem 1}
+	
+	Statistical learning is the process of learning from data. The majority of statistical learning can be divided into two categories: \textbf{Supervised Learning} and \textbf{Unsupervised learning}. In Supervised Learning, you have \textbf{inputs} as well as the corresponding \textbf{outcomes} that serve to direct the learning process. The goal is to estimate some unknown function f, which serves as the information about the relationship between inputs and outputs. In Unsupervised Learning we observe only the predictors; the responses are not available. The goal of unsupervised learning is to discover something about the data, for example how it groups together. For this reason it is often referred to as Clustering. \\
+	
+	
+	\noindent Supervised Learning is used for \textbf{inference} and \textbf{prediction}. In Prediction the goal is to estimate some unknown function f so as to accurately predict some output given a new input. This can be done for \textbf{quantitative} values, which is known as \textbf{regression} (on continuous values), or for \textbf{qualitative} (or categorical) values, which is referred to as \textbf{classification}.\\
+	
+	
+	\noindent When talking about supervised learning it's also important to discuss \textbf{training data} and \textbf{test data}. The training data is used, as the name suggests, to train a statistical model. Test data are data that have not been given to the model during training and are used to test the performance of that model.\\
+	
+	
+	\noindent The methods used to to estimate f can be categorized as \textbf{parametric} or \textbf{non-parametric}. Parametric methods make the assumption that the unknown function is linear, and use linear methods to estimate it. Non-parametric methods make no assumptions about the underlying form of f, and thus can use methods that are much more coplicated and have many more degrees of freedom.\\
+	
+	
+	\section*{Problem 2}
+	
+	
+	Show that:
+	
+	\[ E(Y) = argmin_{c}E[(Y-c)^2] \]
+	
+	We are looking to proof that the value of $c$ for which $E[(Y-c)^2]$ attains its minimum is $E(Y)$.\\\\
+	
+	
+	Development:\\\\
+	 
+	
+	$ (Y-c)^2 = Y^2 - 2cY + c^2 $\\\\
+	
+	
+	
+	$ E[(Y-c)^2] = E[Y^2 - 2cY + c^2] = E[Y^2] - 2cE[Y] + c^2	$\\\\
+	
+	 We assume here that $c$ is a constant, and so the derivative is: \\\\
+	 
+	 
+	$ \dfrac{d}{dc}E[Y^2] - 2cE[Y] + c^2 = -2E(Y) + 2c $ \\\\
+	
+	We equal it to zero and obtain:\\\\
+	
+	$2c = 2E(Y)$ and so $c = E(Y)$ which show that the first statement is true. \\\\
+	
+	
+	\section*{Problem 3}
+	
+	Prove the bias-variance trade-off with irreducible error:\\\\
+	
+	
+	
+	$E[(y_{0} - \hat{f}(x_{0}) - E(\hat{f}(x_{0})))^2] + [E(\hat{f}(x_{0}) - f(x_{0})]^2 + Var(\epsilon) =$\\\\
+	
+	$Var(\hat{f}(x_{0})) + [Bias(\hat{f}(x_{0}))] + Var(\epsilon)$\\
+	\\\\
+	
+  Frist we note $E[(y_{0} - \hat{f}(x_{0}))^2] = E[(y_{0} + \epsilon - \hat{f}(x_{0}))^2]$ 
+	Next, we expand into $E[y_{0}^2 + \hat{f}(x_{0})^2 - 2y_{0}\hat{f}(x_{0})]$
+  Assuming that $y_{0}$ is deterministic, we can simplify to $E[\hat{f}(x_{0})^2] + y_{0}^2 - 2y_{0}E[\hat{f}(x_{0})]$
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+\end{document}
