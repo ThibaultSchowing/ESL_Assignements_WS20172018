@@ -163,7 +163,7 @@
 	
 	
 	
-	
+	\newpage
 	\section*{Problem 3}
 	
 	Prove the bias-variance trade-off with irreducible error:\\\\
@@ -175,13 +175,17 @@
 	$Var(\hat{f}(x_{0})) + [Bias(\hat{f}(x_{0}))] + Var(\epsilon)$\\
 	\\\\
 	
-	First, we expand $E[(y_{0} - \hat{f}(x_{0}))^2]$ into $E[y_{0}^2 + \hat{f}(x_{0})^2 - 2y_{0}\hat{f}(x_{0})]$\newline
+	
+	
+	
+	\noindent First, we expand $E[(y_{0} - \hat{f}(x_{0}))^2]$ into $E[y_{0}^2 + \hat{f}(x_{0})^2 - 2y_{0}\hat{f}(x_{0})]$\newline
     	\newline
   	Next, assuming that $y_{0}$ is deterministic, we can simplify to $E[\hat{f}(x_{0})^2] + y_{0}^2 - 2y_{0}E[\hat{f}(x_{0})]$\newline
     	\newline
     	With the rules of expectation we get $E[\hat{f}(x_{0})^2] - 2y_{0}E[\hat{f}(x_{0}) + y_{0}^2$\newline
     	\newline
-    	Adding and Subtracting $E[\hat{f}(x_{0})]^2$ we get
+    	Adding and Subtracting $E[\hat{f}(x_{0})]^2$ we get\\
+    	
 	$E[\hat{f}(x_{0})^2] - E[\hat{f}(x_{0})]^2 + E[\hat{f}(x_{0})]^2  - 2y_{0}E[\hat{f}(x_{0})] + y_{0}^2$\newline
     	\newline
    	Next, $E[\hat{f}(x_{0})^2] - E[\hat{f}(x_{0})]^2 = Var(\hat{f}(x_{0}))$, so we get\newline 
@@ -195,7 +199,7 @@
 	
 	
 	
-	
+	\newpage
 	\section*{Problem 4}
 	\subsection*{b}
 	
