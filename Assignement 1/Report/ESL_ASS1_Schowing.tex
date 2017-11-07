@@ -140,7 +140,7 @@
 	
 	\noindent The methods used to estimate $f$ can be categorized as \textbf{parametric} or \textbf{non-parametric}. Parametric methods make the assumption that the unknown function is linear, and use linear methods to estimate it. Non-parametric methods make no assumptions about the underlying form of $f$, and thus can use methods that are much more complicated and have many more degrees of freedom.\\
 	
-	
+	\newpage
 	\section*{Problem 2}
 	
 	
@@ -151,25 +151,15 @@
 	We are looking to proof that the value of $c$ for which $E[(Y-c)^2]$ attains its minimum is $E(Y)$.\\\\
 	
 	
-	Development:\\\\
-	 
-	
-	$ (Y-c)^2 = Y^2 - 2cY + c^2 $\\\\
-	
-	
-	
-	$ E[(Y-c)^2] = E[Y^2 - 2cY + c^2] = E[Y^2] - 2cE[Y] + c^2	$\\\\
-	
-	 We assume here that $c$ is a constant, and so the derivative is: \\\\
-	 
-	 
-	$ \dfrac{d}{dc}E[Y^2] - 2cE[Y] + c^2 = -2E(Y) + 2c $ \\\\
-	
-	We equal it to zero and obtain:\\\\
-	
-	$2c = 2E(Y)$ and so $c = E(Y)$ which show that the first statement is true. \\\\
-	
-
+	To show $E(Y) = argmin_cE[(Y-c)^2]$:
+	\begin{itemize}
+		\item $E[(Y-c)^2] = E[(Y-c)(Y-c)]$
+		\item = $E[y^2 - 2Yc = c^2]$
+		\item = $E[y^2] - 2cE[y] + c^2$	
+		\item to minimize solve for where the gradient is zero: $\frac{d}{dc}E[(Y-c)^2] = 0 + 2E[y] + 2c$
+		\item the value of $c$ where the gradient is zero is therefore: $c=E[y]$
+		\item (optional)to verify this is a minimum take $\frac{d^2}{dc^2}$. The result is 2, which is greater than zero, therefore this value is a minimum.
+	\end{itemize}
 	
 	
 	
