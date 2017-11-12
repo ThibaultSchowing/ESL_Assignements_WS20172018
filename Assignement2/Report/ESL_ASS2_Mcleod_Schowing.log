@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  6 NOV 2017 22:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  12 NOV 2017 15:13
 entering extended mode
 **./ESL_ASS2_Mcleod_Schowing.tex
 (ESL_ASS2_Mcleod_Schowing.tex
@@ -1446,7 +1446,41 @@ l.136 	\include{problem2}
 ]
 \openout2 = `problem3.aux'.
 
- (problem3.tex)
+ (problem3.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41 A
+      nd [4
+
+
+])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1458,10 +1492,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.139 	\include{problem3}
-                          [4
-
-
-]
+                          [5]
 \openout2 = `problem4.aux'.
 
  (problem4.tex)
@@ -1476,7 +1507,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.142 	\include{problem4}
-                          [5
+                          [6
 
 
 ] 
@@ -1495,11 +1526,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
 Here is how much of TeX's memory you used:
  33006 strings out of 493333
  757384 string characters out of 3139193
- 973012 words of memory out of 3000000
+ 977012 words of memory out of 3000000
  35949 multiletter control sequences out of 15000+200000
  9839 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,11n,98p,752b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69i,12n,98p,752b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
@@ -1510,9 +1541,9 @@ e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
 pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ESL_ASS2_Mcleod_Schowing.pdf (5 pages, 114016 bytes).
+Output written on ESL_ASS2_Mcleod_Schowing.pdf (6 pages, 127632 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
+ 73 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
