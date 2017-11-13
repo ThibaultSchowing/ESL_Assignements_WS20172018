@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  13 NOV 2017 12:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  13 NOV 2017 20:02
 entering extended mode
 **./ESL_ASS2_Mcleod_Schowing.tex
 (ESL_ASS2_Mcleod_Schowing.tex
@@ -1398,11 +1398,8 @@ Package lastpage Info: Please have a look at the pageslts package at
 \openout2 = `problem1.aux'.
 
  (problem1.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
 LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -1410,7 +1407,26 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 5.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+)
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.42 ...ma^2 + k^2\rho\sigma^2 - k\rho\sigma^2] \]
+                                                   [2
+
+
+])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1422,10 +1438,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.133 	\include{problem1}
-                          [2
-
-
-]
+                          [3]
 \openout2 = `problem2.aux'.
 
  (problem2.tex)
@@ -1440,7 +1453,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.136 	\include{problem2}
-                          [3
+                          [4
 
 
 ]
@@ -1477,7 +1490,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.41 A
-      nd [4
+      nd [5
 
 
 ]
@@ -1497,60 +1510,31 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.139 	\include{problem3}
-                          [5]
+                          [6]
 \openout2 = `problem4.aux'.
 
  (problem4.tex
+<img/ESL_02_disp_vs_cyl.png, id=40, 510.90875pt x 298.11375pt>
+File: img/ESL_02_disp_vs_cyl.png Graphic file (type png)
 
-LaTeX Warning: File `img/ESL_02_disp_vs_cyl.png' not found on input line 9.
+<use img/ESL_02_disp_vs_cyl.png>
+Package pdftex.def Info: img/ESL_02_disp_vs_cyl.png used on input line 9.
+(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
 
+<img/ESL_02_disp_vs_weight.png, id=42, 510.90875pt x 298.11375pt>
+File: img/ESL_02_disp_vs_weight.png Graphic file (type png)
 
-! Package pdftex.def Error: File `img/ESL_02_disp_vs_cyl.png' not found.
+<use img/ESL_02_disp_vs_weight.png>
+Package pdftex.def Info: img/ESL_02_disp_vs_weight.png used on input line 13.
+(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 		\includegraphics{img/ESL_02_disp_vs_cyl.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<img/ESL_02_disp_vs_horsepower.png, id=43, 510.90875pt x 298.11375pt>
+File: img/ESL_02_disp_vs_horsepower.png Graphic file (type png)
 
-
-LaTeX Warning: File `img/ESL_02_disp_vs_weight.png' not found on input line 13.
-
-
-
-! Package pdftex.def Error: File `img/ESL_02_disp_vs_weight.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13 ...udegraphics{img/ESL_02_disp_vs_weight.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `img/ESL_02_disp_vs_horsepower.png' not found on input line
- 17.
-
-
-! Package pdftex.def Error: File `img/ESL_02_disp_vs_horsepower.png' not found.
-
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 ...raphics{img/ESL_02_disp_vs_horsepower.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use img/ESL_02_disp_vs_horsepower.png>
+Package pdftex.def Info: img/ESL_02_disp_vs_horsepower.png used on input line 1
+7.
+(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1563,57 +1547,30 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.19 	\newpage
-               [6
+               [7
 
 
-]
+ <./img/ESL_02_disp_vs_cyl.png> <./img/ESL_02_disp_vs_weight.png>] <img/ESL_02_
+weight_vs_mpg.png, id=54, 510.90875pt x 298.11375pt>
+File: img/ESL_02_weight_vs_mpg.png Graphic file (type png)
 
-LaTeX Warning: File `img/ESL_02_weight_vs_mpg.png' not found on input line 23.
+<use img/ESL_02_weight_vs_mpg.png>
+Package pdftex.def Info: img/ESL_02_weight_vs_mpg.png used on input line 23.
+(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
 
+<img/ESL_02_disp_vs_mpg.png, id=55, 510.90875pt x 298.11375pt>
+File: img/ESL_02_disp_vs_mpg.png Graphic file (type png)
 
-! Package pdftex.def Error: File `img/ESL_02_weight_vs_mpg.png' not found.
+<use img/ESL_02_disp_vs_mpg.png>
+Package pdftex.def Info: img/ESL_02_disp_vs_mpg.png used on input line 27.
+(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.23 ...ludegraphics{img/ESL_02_weight_vs_mpg.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<img/ESL_02_hrsp_mpg.png, id=56, 510.90875pt x 298.11375pt>
+File: img/ESL_02_hrsp_mpg.png Graphic file (type png)
 
-
-LaTeX Warning: File `img/ESL_02_disp_vs_mpg.png' not found on input line 27.
-
-
-! Package pdftex.def Error: File `img/ESL_02_disp_vs_mpg.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.27 ...ncludegraphics{img/ESL_02_disp_vs_mpg.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `img/ESL_02_hrsp_mpg.png' not found on input line 31.
-
-
-! Package pdftex.def Error: File `img/ESL_02_hrsp_mpg.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 		\includegraphics{img/ESL_02_hrsp_mpg.png}
-                                                
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<use img/ESL_02_hrsp_mpg.png>
+Package pdftex.def Info: img/ESL_02_hrsp_mpg.png used on input line 31.
+(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1626,7 +1583,20 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.33 	\newpage
-               [7]
+               [8 <./img/ESL_02_disp_vs_horsepower.png> <./img/ESL_02_weight_vs
+_mpg.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.33 	\newpage
+               [9 <./img/ESL_02_disp_vs_mpg.png> <./img/ESL_02_hrsp_mpg.png>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1638,39 +1608,20 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.35 	\newpage
-               [8]
+               [10]
+<img/ESL_02_nonlinearity.png, id=74, 510.90875pt x 298.11375pt>
+File: img/ESL_02_nonlinearity.png Graphic file (type png)
 
-LaTeX Warning: File `img/ESL_02_nonlinearity.png' not found on input line 51.
+<use img/ESL_02_nonlinearity.png>
+Package pdftex.def Info: img/ESL_02_nonlinearity.png used on input line 51.
+(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
 
+<img/ESL_02_leverage.png, id=75, 510.90875pt x 298.11375pt>
+File: img/ESL_02_leverage.png Graphic file (type png)
 
-! Package pdftex.def Error: File `img/ESL_02_nonlinearity.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 ...cludegraphics{img/ESL_02_nonlinearity.png}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `img/ESL_02_leverage.png' not found on input line 55.
-
-
-! Package pdftex.def Error: File `img/ESL_02_leverage.png' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55 		\includegraphics{img/ESL_02_leverage.png}
-                                                
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+<use img/ESL_02_leverage.png>
+Package pdftex.def Info: img/ESL_02_leverage.png used on input line 55.
+(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1683,7 +1634,20 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.142 	\include{problem4}
-                          [9] 
+                          [11 <./img/ESL_02_nonlinearity.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.142 	\include{problem4}
+                          [12 <./img/ESL_02_leverage.png>]
+
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
@@ -1697,27 +1661,29 @@ d.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 33047 strings out of 493333
- 757937 string characters out of 3139193
- 977012 words of memory out of 3000000
- 35966 multiletter control sequences out of 15000+200000
- 10007 words of font info for 38 fonts, out of 3000000 for 9000
+ 33078 strings out of 493333
+ 758963 string characters out of 3139193
+ 978012 words of memory out of 3000000
+ 35997 multiletter control sequences out of 15000+200000
+ 9839 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,98p,752b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program 
-Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on ESL_ASS2_Mcleod_Schowing.pdf (9 pages, 150227 bytes).
+fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on ESL_ASS2_Mcleod_Schowing.pdf (12 pages, 444978 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 15 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 139 PDF objects out of 1000 (max. 8388607)
+ 16 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

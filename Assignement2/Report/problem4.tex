@@ -6,29 +6,29 @@
 	\newline
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics{img/ESL_02_disp_vs_cyl.png}
+		\includegraphics[width=.8\linewidth]{img/ESL_02_disp_vs_cyl.png}
 	\end{figure}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics{img/ESL_02_disp_vs_weight.png}
+		\includegraphics[width=.8\linewidth]{img/ESL_02_disp_vs_weight.png}
 	\end{figure}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics{img/ESL_02_disp_vs_horsepower.png}
+		\includegraphics[width=.8\linewidth]{img/ESL_02_disp_vs_horsepower.png}
 	\end{figure}
 	\newpage
 	Scatterplots for three highly anti-correlated variables are below.
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics{img/ESL_02_weight_vs_mpg.png}
+		\includegraphics[width=.8\linewidth]{img/ESL_02_weight_vs_mpg.png}
 	\end{figure}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics{img/ESL_02_disp_vs_mpg.png}
+		\includegraphics[width=.8\linewidth]{img/ESL_02_disp_vs_mpg.png}
 	\end{figure}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics{img/ESL_02_hrsp_mpg.png}
+		\includegraphics[width=.8\linewidth]{img/ESL_02_hrsp_mpg.png}
 	\end{figure}
 	\newpage
 	The number of cylinders, the weight of the vehicle, and the horsepower have the highest correlations with displacement, respectively. Some of these numbers make intuitive sense from what we know about how internal combustion engines work. If you want more displacement adding more cylinders is one option to achieve this. Weight, displacement and horsepower are also highly anti-correlated with mpg. So, as the vehicle gets heavier, or gets an increase in power, the efficiency of the engine reduces and you get fewer miles per gallon.
@@ -48,13 +48,14 @@
 	\item The residual plot does suggest a non-linearity in the data. The far left side of the plot shows consistent over prediction (i.e. bias) in the data. There don't seem to be any unusually large outliers. There is a high leverage point, point at index 14, as seen in the image below. 
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics{img/ESL_02_nonlinearity.png}
+		\includegraphics[width=.8\linewidth]{img/ESL_02_nonlinearity.png}
 	\end{figure}
 	\begin{figure}[htbp]
 		\centering
-		\includegraphics{img/ESL_02_leverage.png}
+		\includegraphics[width=.8\linewidth]{img/ESL_02_leverage.png}
 	\end{figure}
 	
+	\item The transformations with other variables like weight, year or cylinder improve the result ($R^2$ value) but transforming displacement with itself does not make the model better. Doing transformations on one predictor doesn't give you as much benefits as using more predictors. 
 	
 \end{enumerate}  
 
