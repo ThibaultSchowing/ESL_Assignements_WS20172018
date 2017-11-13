@@ -1,7 +1,7 @@
 ### Elements of Statistical Learning Exercise sheet 2 
 
-## Name:Sarah McLeod and 
-## Matriculation number: 2566398 and 
+## Name:Sarah McLeod and Thibault Schowing
+## Matriculation number: 2566398 and 2571837
 
 library(ISLR)
 library(ggplot2)
