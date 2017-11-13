@@ -1,7 +1,7 @@
 ### Elements of Statistical Learning Exercise sheet 1 
 
 ## Name:Sarah McLeod and 
-## Matriculation number: 2566398 and 
+## Matriculation number: 2566398 and 2571837
 
 # Load the data
 load("ozone.RData")
