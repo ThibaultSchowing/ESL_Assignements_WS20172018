@@ -1,1 +1,18 @@
 	\section*{Problem 2}
+	We consider $y=X\beta + \epsilon$ and the least square estimator $\hat{\beta} = (X^TX)^{-1}X^Ty$. We assume some arbitrary linear estimator $\tilde{\theta} = c^Ty$ is unbiased for $\theta = a^T\beta$. To show that the least square estimate is the best linear unbiased estimate in terms of variance, we need to show
+\[ Var(\hat{\theta}) \leq  Var(\tilde{\theta}) \]
+We know 
+\[ Var(\tilde{\theta}) = Var(\hat{\theta} - (\tilde{\theta} - \hat{\theta})) \]
+By the rules of variance this becomes
+\[ Var(\tilde{\theta}) = Var(\hat{\theta}) + Var(\tilde{\theta} - \hat{\theta}) + 2Cov(\hat{\theta},(\tilde{\theta} - \hat{\theta}))) \]
+Solving for $Var(\tilde{\theta} - \hat{\theta})$ with $\hat{\theta} = a^TMy$, where $M = (X^TX)^{-1}X^T$ 
+\[ Var(\tilde{\theta} - \hat{\theta}) = Var(c^Ty - a^TMy) \]
+\[  = Var(c^T - a^TM)y \]
+\[  = Var(c - aM)^Ty \]
+From matrix variance properties this becomes
+\[  = (c - aM)Var(y)(c - aM)^T \]
+\[  = \sigma^2(c - aM)(c^T - aM)^T \]
+This is $> 0$ because .... something about positive semidefinite matrices?\newline
+
+\noindent Next we calculate $Cov(\hat{\theta},(\tilde{\theta} - \hat{\theta}))$
+\[ Cov(\hat{\theta},(\tilde{\theta} - \hat{\theta})) = Cov(a^T,(c-aM)^Ty)  \]
