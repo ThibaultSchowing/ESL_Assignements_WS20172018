@@ -16,3 +16,8 @@ This is $> 0$ because .... something about positive semidefinite matrices?\newli
 
 \noindent Next we calculate $Cov(\hat{\theta},(\tilde{\theta} - \hat{\theta}))$
 \[ Cov(\hat{\theta},(\tilde{\theta} - \hat{\theta})) = Cov(a^T,(c-aM)^Ty)  \]
+\noindent Intuitively, the "best" estimator would be the one with the smallest covariance between $\hat{\theta}$ and $\tilde{\theta}$. Showing this is where we got stuck.\newline 
+\noindent Assuming you've proved this, then
+\[Var(\tilde{\theta})  = Var(\hat{\theta}) + Var(\tilde{\theta} - \hat{\theta}) \]
+\[Var(\hat{\theta})  \leq Var(\hat{\theta}) + Var(\tilde{\theta} - \hat{\theta}) \]
+\[ Var(\hat{\theta}) \leq  Var(\tilde{\theta}) \]
