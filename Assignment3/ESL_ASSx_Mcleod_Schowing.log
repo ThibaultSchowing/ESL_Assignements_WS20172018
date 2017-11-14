@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  14 NOV 2017 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  14 NOV 2017 23:27
 entering extended mode
-**./ESL_ASS2_Mcleod_Schowing.tex
-(ESL_ASS2_Mcleod_Schowing.tex
+**./ESL_ASSx_Mcleod_Schowing.tex
+(ESL_ASSx_Mcleod_Schowing.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
@@ -1237,9 +1237,9 @@ s
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-(ESL_ASS2_Mcleod_Schowing.aux (problem1.aux) (problem2.aux) (problem3.aux)
+(ESL_ASSx_Mcleod_Schowing.aux (problem1.aux) (problem2.aux) (problem3.aux)
 (problem4.aux))
-\openout1 = `ESL_ASS2_Mcleod_Schowing.aux'.
+\openout1 = `ESL_ASSx_Mcleod_Schowing.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 88.
 LaTeX Font Info:    ... okay on input line 88.
@@ -1313,9 +1313,9 @@ LaTeX Info: Redefining \ref on input line 88.
 LaTeX Info: Redefining \pageref on input line 88.
 LaTeX Info: Redefining \nameref on input line 88.
 
-(ESL_ASS2_Mcleod_Schowing.out) (ESL_ASS2_Mcleod_Schowing.out)
+(ESL_ASSx_Mcleod_Schowing.out) (ESL_ASSx_Mcleod_Schowing.out)
 \@outlinefile=\write4
-\openout4 = `ESL_ASS2_Mcleod_Schowing.out'.
+\openout4 = `ESL_ASSx_Mcleod_Schowing.out'.
 
 
 *geometry* driver: auto-detecting
@@ -1397,21 +1397,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 \openout2 = `problem1.aux'.
 
- (problem1.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 5.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 5.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
+ (problem1.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1422,31 +1408,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 ...ma^2 + k^2\rho\sigma^2 - k\rho\sigma^2] \]
-                                                   [2
+l.131 	\include{problem1}
+                          [2
 
 
-])
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.133 	\include{problem1}
-                          [3]
+]
 \openout2 = `problem2.aux'.
 
- (problem2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 14--16
-
- []
-
-)
+ (problem2.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1457,33 +1426,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.136 	\include{problem2}
-                          [4
+l.133 	\include{problem2}
+                          [3
 
 
 ]
 \openout2 = `problem3.aux'.
 
- (problem3.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 38--39
-
- []
-
+ (problem3.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1494,53 +1444,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.41 A
-      nd [5
+l.135 	\include{problem3}
+                          [4
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
-
- []
-
-)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.139 	\include{problem3}
-                          [6]
 \openout2 = `problem4.aux'.
 
- (problem4.tex
-<img/ESL_02_disp_vs_cyl.png, id=38, 510.90875pt x 298.11375pt>
-File: img/ESL_02_disp_vs_cyl.png Graphic file (type png)
-
-<use img/ESL_02_disp_vs_cyl.png>
-Package pdftex.def Info: img/ESL_02_disp_vs_cyl.png used on input line 9.
-(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
-
-<img/ESL_02_disp_vs_weight.png, id=40, 510.90875pt x 298.11375pt>
-File: img/ESL_02_disp_vs_weight.png Graphic file (type png)
-
-<use img/ESL_02_disp_vs_weight.png>
-Package pdftex.def Info: img/ESL_02_disp_vs_weight.png used on input line 13.
-(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
-
-<img/ESL_02_disp_vs_horsepower.png, id=41, 510.90875pt x 298.11375pt>
-File: img/ESL_02_disp_vs_horsepower.png Graphic file (type png)
-
-<use img/ESL_02_disp_vs_horsepower.png>
-Package pdftex.def Info: img/ESL_02_disp_vs_horsepower.png used on input line 1
-7.
-(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
-
+ (problem4.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1551,142 +1462,40 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 	\newpage
-               [7
+l.137 	\include{problem4}
+                          [5
 
 
- <./img/ESL_02_disp_vs_cyl.png> <./img/ESL_02_disp_vs_weight.png>] <img/ESL_02_
-weight_vs_mpg.png, id=52, 510.90875pt x 298.11375pt>
-File: img/ESL_02_weight_vs_mpg.png Graphic file (type png)
-
-<use img/ESL_02_weight_vs_mpg.png>
-Package pdftex.def Info: img/ESL_02_weight_vs_mpg.png used on input line 23.
-(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
-
-<img/ESL_02_disp_vs_mpg.png, id=53, 510.90875pt x 298.11375pt>
-File: img/ESL_02_disp_vs_mpg.png Graphic file (type png)
-
-<use img/ESL_02_disp_vs_mpg.png>
-Package pdftex.def Info: img/ESL_02_disp_vs_mpg.png used on input line 27.
-(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
-
-<img/ESL_02_hrsp_mpg.png, id=54, 510.90875pt x 298.11375pt>
-File: img/ESL_02_hrsp_mpg.png Graphic file (type png)
-
-<use img/ESL_02_hrsp_mpg.png>
-Package pdftex.def Info: img/ESL_02_hrsp_mpg.png used on input line 31.
-(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.33 	\newpage
-               [8 <./img/ESL_02_disp_vs_horsepower.png> <./img/ESL_02_weight_vs
-_mpg.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.33 	\newpage
-               [9 <./img/ESL_02_disp_vs_mpg.png> <./img/ESL_02_hrsp_mpg.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.35 	\newpage
-               [10]
-<img/ESL_02_nonlinearity.png, id=72, 510.90875pt x 298.11375pt>
-File: img/ESL_02_nonlinearity.png Graphic file (type png)
-
-<use img/ESL_02_nonlinearity.png>
-Package pdftex.def Info: img/ESL_02_nonlinearity.png used on input line 51.
-(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
-
-<img/ESL_02_leverage.png, id=73, 510.90875pt x 298.11375pt>
-File: img/ESL_02_leverage.png Graphic file (type png)
-
-<use img/ESL_02_leverage.png>
-Package pdftex.def Info: img/ESL_02_leverage.png used on input line 55.
-(pdftex.def)             Requested size: 334.60422pt x 195.24092pt.
-)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.142 	\include{problem4}
-                          [11 <./img/ESL_02_nonlinearity.png>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 13.59999pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
-een already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.142 	\include{problem4}
-                          [12 <./img/ESL_02_leverage.png>]
-
+] 
 AED: lastpage setting LastPage
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
-(ESL_ASS2_Mcleod_Schowing.aux (problem1.aux) (problem2.aux) (problem3.aux)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
+(ESL_ASSx_Mcleod_Schowing.aux (problem1.aux) (problem2.aux) (problem3.aux)
 (problem4.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
-Package rerunfilecheck Info: File `ESL_ASS2_Mcleod_Schowing.out' has not change
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+Package rerunfilecheck Info: File `ESL_ASSx_Mcleod_Schowing.out' has not change
 d.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
  ) 
 Here is how much of TeX's memory you used:
- 33078 strings out of 493333
- 758963 string characters out of 3139193
- 978012 words of memory out of 3000000
- 35997 multiletter control sequences out of 15000+200000
- 9839 words of font info for 37 fonts, out of 3000000 for 9000
+ 32965 strings out of 493333
+ 756772 string characters out of 3139193
+ 972012 words of memory out of 3000000
+ 35926 multiletter control sequences out of 15000+200000
+ 5491 words of font info for 20 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,12n,98p,752b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69i,11n,98p,752b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ESL_ASS2_Mcleod_Schowing.pdf (12 pages, 433888 bytes).
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmti10.pfb>
+Output written on ESL_ASSx_Mcleod_Schowing.pdf (5 pages, 73854 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 16 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 50 PDF objects out of 1000 (max. 8388607)
+ 2 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

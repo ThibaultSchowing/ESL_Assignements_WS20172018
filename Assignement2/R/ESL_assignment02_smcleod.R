@@ -84,14 +84,6 @@ summary(nl3_reg)
 # Increasing importance of displacement is not necessary to enhance the fit of the linear model, it makes it even worse. 
 
 
-# Really ??????? It's a linear model ....
-# According to the quadratic look of the corelation between mpg and displacement, We could have thought that a squared linear combination would have helped. (is it even related ?)
 
-
-
-
-
-nl4_reg <- lm(mpg ~ displacement , data = Auto)
-summary(nl4_reg)
 
 
