@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  24 NOV 2017 12:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  26 NOV 2017 22:57
 entering extended mode
 **./ESL_ASS3_Mcleod_Schowing.tex
 (ESL_ASS3_Mcleod_Schowing.tex
@@ -1438,7 +1438,38 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-)
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.38 H
+      ere we have: [3
+
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 ...beta_1 X}}{1 + e^{\beta_0 + \beta_1 X}} \]
+                                                   [4])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1450,10 +1481,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.133 	\include{problem2}
-                          [3
-
-
-]
+                          [5]
 \openout2 = `problem3.aux'.
 
  (problem3.tex)
@@ -1468,7 +1496,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.135 	\include{problem3}
-                          [4
+                          [6
 
 
 ]
@@ -1486,7 +1514,7 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.137 	\include{problem4}
-                          [5
+                          [7
 
 
 ] 
@@ -1509,7 +1537,7 @@ Here is how much of TeX's memory you used:
  35954 multiletter control sequences out of 15000+200000
  10444 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 69i,11n,98p,752b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 69i,12n,98p,752b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiK
@@ -1522,9 +1550,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ESL_ASS3_Mcleod_Schowing.pdf (5 pages, 136358 bytes).
+Output written on ESL_ASS3_Mcleod_Schowing.pdf (7 pages, 143988 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
+ 86 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

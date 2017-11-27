@@ -30,3 +30,62 @@ We then replace in $\frac{p(X)}{1 - p(X)} = e^{\beta_0 + \beta_1 X}  $ and the t
 \[ \frac{p(X)}{1 - p(X)} = \frac{e^{\beta_0 + \beta_1 X} (1 + e^{\beta_0 + \beta_1 X} )}{1 + e^{\beta_0 + \beta_1 X}} = e^{\beta_0 + \beta_1 X}  \]
 
 
+\subsection*{d}
+
+In the previous exercise we saw that $Odds(X) = \frac{p(X)}{1 - p(X)} = e^{\beta_0 + \beta_1 X} $.\\
+
+
+Here we have: 
+
+\[ \frac{Odds(X_i + \Delta)}{Odds(X_i)} = \frac{e^{\beta_0 + \beta_1 (X + \Delta)}}{e^{\beta_0 + \beta_1 (X)}} \]
+
+This is equal to: 
+\[ e^{\beta_0 + \beta_1 X + \beta_1 \Delta}  e^{-\beta_0 - \beta_1 X} = e^{\beta_1 \Delta} \]
+
+If the random variable $X$ is an important feature and so have a high $\beta_1$, any small change in $X$ will have a big effect on the odds. The bigger the $\beta_1$ the bigger the effects. 
+
+\subsection*{e}
+
+
+
+We have 
+\[  p(X) = \frac{e^{\beta_0 + \beta_1 X}}{1 + e^{\beta_0 + \beta_1 X}} = 0.5 \]
+
+The Odds are: 
+
+\[ Odds(X) = \frac{p(X)}{1 - p(X)} = e^{\beta_0 + \beta_1 X}  \]
+
+So we have: 
+\[ Odds(X) = \frac{0.5}{0.5} = e^{\beta_0 + \beta_1 X} = 1 \]
+
+So
+
+\[ \beta_0 + \beta_1 X = 0 \]
+
+And
+
+\[ \frac{-\beta_0}{\beta_1} = X \]
+
+If the probability is $0.5 $, it means that $X$ lies on the hyperplane (a.k.a Decision boundary) which equation is $ \beta_0 + \beta_1 X = 0 $. It means that it cannot be classified. 
+
+\subsection*{f}
+
+The book introduces the conditional probabilities and the log-odds for 2-way logistic regression. Extend this model to logistic regression for k response classes.
+
+The log-odds for 2-way logistic regression is: 
+\[ log-odds(X) = log(\frac{p(X)}{1 - p(X)}) = \beta_0 + \beta_1 X  \]
+
+And the probability is: 
+\[ p(X) = \frac{e^{\beta_0 + \beta_1 X}}{1 + e^{\beta_0 + \beta_1 X}} \]
+
+
+
+
+
+
+
+
+
+
+
+
