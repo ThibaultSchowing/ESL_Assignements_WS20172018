@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  28 NOV 2017 15:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  30 NOV 2017 09:46
 entering extended mode
 **./ESL_ASS3_Mcleod_Schowing.tex
 (ESL_ASS3_Mcleod_Schowing.tex
@@ -1397,7 +1397,17 @@ Package lastpage Info: Please have a look at the pageslts package at
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 \openout2 = `problem1.aux'.
 
- (problem1.tex)
+ (problem1.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 4.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 4.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1420,15 +1430,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 10.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 10.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
 Underfull \hbox (badness 10000) in paragraph at lines 12--13
 
  []
@@ -1540,10 +1542,10 @@ d.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
  ) 
 Here is how much of TeX's memory you used:
- 33011 strings out of 493333
- 757460 string characters out of 3139193
+ 33027 strings out of 493333
+ 757639 string characters out of 3139193
  977012 words of memory out of 3000000
- 35954 multiletter control sequences out of 15000+200000
+ 35964 multiletter control sequences out of 15000+200000
  10444 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,98p,752b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1562,9 +1564,9 @@ iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmti10.pfb>
-Output written on ESL_ASS3_Mcleod_Schowing.pdf (7 pages, 171831 bytes).
+Output written on ESL_ASS3_Mcleod_Schowing.pdf (7 pages, 185769 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
- 2 named destinations out of 1000 (max. 500000)
+ 106 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
