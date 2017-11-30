@@ -1,1 +1,33 @@
 \section*{Problem 4}
+\begin{enumerate}
+\item See R code for training and test set splits.
+\item For the LDA model fit according to the data split in (a) the error is calculated as the percentage of correctly classified items. The training error is 0.056 and the test error is 0.080.
+\item 
+\item For the phonemes aa and ao the training error is 0.1064 and the test error is 0.2141.
+\item For a QDA model fit using all phoneme data the train error is 0, and the test error is 0.158. For a QDA model fit on only phonemes aa and ao the train error is 0 and the test error is 0.3394. The training error is lower in the QDA model, however this model is also overfitting the data, as evidenced by the test error being much higher than the LDA model. In this example we would prefer the LDA model.
+\item For the LDA model the confusion matrix for aa and ao is:
+\begin{center}
+\begin{tabular}{c|c|c|c}
+\hline
+& aa & ao & total\\
+\hline
+aa & 439 & 80 &  519 \\
+ao & 56 & 703 & 759 \\
+\hline
+Total & 495 & 783 &  
+\end{tabular}
+\end{center}
+The confusion matrix for the QDA model for aa and ao is:
+\begin{center}
+\begin{tabular}{c|c|c|c}
+\hline
+& aa & ao & total\\
+\hline
+aa & 519 & 0 &  519 \\
+ao & 0 & 759 & 759 \\
+\hline
+Total & 519 & 759 &  
+\end{tabular}
+\end{center}
+\end{enumerate}
+These tables show that, at least on the training data, the QDA model has better sensitivity and better specificity. The QDA correctly identifies all training instances of each aa and ao phoneme. The LDA model on the other hand misclassified aa as ao on 80 instances and misclassified ao as aa 56 times. 
