@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  30 NOV 2017 12:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  30 NOV 2017 21:03
 entering extended mode
 **./ESL_ASS4_Mcleod_Schowing.tex
 (ESL_ASS4_Mcleod_Schowing.tex
@@ -1397,7 +1397,22 @@ Package lastpage Info: Please have a look at the pageslts package at
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
 \openout2 = `problem1.aux'.
 
- (problem1.tex)
+ (problem1.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 7.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 7.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1415,22 +1430,7 @@ l.131 	\include{problem1}
 ]
 \openout2 = `problem2.aux'.
 
- (problem2.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 6.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 6.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
-
- []
-
-)
+ (problem2.tex)
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1514,7 +1514,7 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ESL_ASS4_Mcleod_Schowing.pdf (5 pages, 140442 bytes).
+Output written on ESL_ASS4_Mcleod_Schowing.pdf (5 pages, 140439 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  4 named destinations out of 1000 (max. 500000)
