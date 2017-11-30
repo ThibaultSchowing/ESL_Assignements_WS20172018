@@ -1,1 +1,30 @@
 \section*{Problem 1}
+To show that the median distance from the origin to the closest data point is given by the expression: 
+
+\[ d(p,N) = \bigg(1 - \frac{1}{2}^\frac{1}{N} \bigg)^\frac{1}{p} \]
+
+First we note that since the data points are uniformly distributed, $P(data_point > d) = 1- P(data_point < d)$. \\
+\noindent Next, we since we have a spherical ball with uniformly distributed points, the probability that a point falls into the sphere is:
+
+\[ P(data_point > d) = \frac{G(p) - G(p)d^p}{G(p)} \]
+
+\noindent which simplifies to : 
+
+\[ P(data_point > d) = 1 - d^p \]
+
+\noindent Since d is the median that means half the points are on one side and half the points are on the other. Therefore $P(data_point > d) = \frac{1}{2}$\\
+\noindent then for a data point we have:
+
+\[ \frac{1}{2} =  1 - d^p \]
+
+\noindent generalizing this to all data points (and assuming all the points were generated independently):
+
+\[ \frac{1}{2} =  (1 - d^p)^N \]
+
+\noindent then we get:
+\[ \frac{1}{2} =  (1 - d^p)^N \]
+\[ 1 - \frac{1}{2}^\frac{1}{N} =  d^p \]
+\[ (1 - \frac{1}{2}^\frac{1}{N})^\frac{1}{p} =  d \]
+
+\noindent For $ N = 100$ and $p = 10$, $d(p,N) \approx 0.608$. This is more than halfway to the boundary, which means most of the data points are closer to the boundary, where prediction is much harder for the KNN algorithm.
+\ 
