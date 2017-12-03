@@ -23,23 +23,43 @@ h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum_{i^{'} = 1}^{n} (x_i^{'} - \ba
 \[ CV_{(n)} = \frac{1}{n} \sum_{i = 1}^{n} MSE_i \]
 
 
-\noindent The equation \ref{LOOCV_shortcut} is like the ordinary MSE, except the ith residual is divided by $1-h_i$. The leverage lies between $1/n$ and $1$, and reflects the amount that an observation influences its own fit. Hence the residuals for high-leverage points are inflated in this formula by exactly the right amount for this equality to hold.(ISLR, p.180)\\
+%\noindent The equation \ref{LOOCV_shortcut} is like the ordinary MSE, except the ith residual is divided by $1-h_i$. The leverage lies between $1/n$ and $1$, and reflects the amount that an observation influences its own fit. Hence the residuals for high-leverage points are inflated in this formula by exactly the right amount for this equality to hold.(ISLR, p.180)\\
 
-$h_{ii}$ correspond to the $i^{th}$ diagonal element of the hat matrix. 
+%$h_{ii}$ correspond to the $i^{th}$ diagonal element of the hat matrix. 
 
-\[ h_{ii} = [H]_{ii} \]
+%\[ h_{ii} = [H]_{ii} \]
 
-\[ H = X(X^T X)^{-1} X^T \]
+
 
 
 % https://notesofastatisticswatcher.wordpress.com/2012/12/18/linear-regression-loocv-trick/
 
-\noindent We can now 
+\noindent So knowing that $ \hat{y} = Hy $ and as it is a Leave One Out cross validation, we fit $ n $ times the model with one element out. So we have:
 
 
+\[ H = X(X^T X)^{-1} X^T \]
+\[ H^{-i} = X(X^T X)^{-1} X^T_{-i} \]
+
+\noindent The hat matrix with all the data and with one out, respectively
+
+\noindent Then we have
+\[ \hat{y}_i = x_i^T [X(X^T X)^{-1} X^T]y \] 
+\[ \hat{y}_{-i} = x_i^T [X_{-i}(X_{-i}^T X_{-i})^{-1} X_{-i}^T]y_{-i} \]
+
+\noindent The fitted values at $ x_i$ when using all the data points and when leaving one out. We can then to the following:
+
+\[ \hat{y}_{-i} = \sum_{i\neq j}^{} H_{ij} y_j + H_{ii} \hat{y}_{-i} \]
+\[ \hat{y}_{-i} = \sum_{j}^{m} H_{ij} y_j - H_{ii} y_i + H_{ii} \hat{y}_{-i} \]
+\[ \hat{y}_{-i} = \hat{y}_{i} - H_{ii} y_{i} + H_{ii} \hat{y}_{-i}  \]
 
 
+We substitute the in the prediction error: 
 
+\[ y_i - \hat{y}_{-i} = y_i - (\hat{y}_{i} - H_{ii} y_{i} + H_{ii} \hat{y}_{-i} ) \]
+\[ y_i - H_{ii}y_{i} - \hat{y}_{-i} - H_{ii}\hat{y}_{-i} = y_i - \hat{y}_i \]
+\[ y_i - \hat{y}_{-i} = \frac{y_i - \hat{y}_{i}}{1 - H_{ii}}\]
+
+Taking the mean square error leads to equation \ref{LOOCV_shortcut}. 
 
 
 
