@@ -1,5 +1,29 @@
 \section*{Problem 2}
+\begin{enumerate}
+\item 
+Ridge regression is done by minimizing the RSS with a quadratic penalty term:
+\[ minimize (y -X\beta)^T(y-X\beta) + \lambda\beta^T\beta  \]
 
+\noindent to show that the solutions take on the form:
+\[ \hat{\beta}^{ridge} = (X^TX + \lambda yI)^{-1}X^Ty \]
+
+\noindent First we expand the equation to:
+\[ y^Ty - y^TX\beta - yX^T\beta^T + X^T\beta^TX\beta + \lambda\beta^T\beta \]
+\noindent which simplifies to:
+\[ y^Ty - yX^T\beta^T - yX^T\beta^T + X^T\beta^TX\beta + \lambda\beta^T\beta \]
+\noindent and:
+\[ y^Ty - 2yX^T\beta^T + X^T\beta^TX\beta + \lambda\beta^T\beta \]
+\noindent We take the first derivative with respect to $\beta$, which gives us:
+\[ 0 + - 2X^Ty + 2(XX^T)\beta  + 2\lambda\beta\] 
+
+\noindent setting this to zero this can be simplified to: 
+\[ 2(XX^T)\beta + 2\lambda\beta = 2X^Ty \]
+\noindent and further simplified to: 
+\[ ((XX^T)+ \lambda I)\beta = X^Ty \]
+\noindent where I is the p x p identity matrix (added to the matrix math works out correctly). Solving for $\beta$ gives:
+\[ \hat{\beta}^{ridge} = (X^TX + \lambda yI)^{-1}X^Ty \]
+\item
+\end{enumerate}
 
 
 
