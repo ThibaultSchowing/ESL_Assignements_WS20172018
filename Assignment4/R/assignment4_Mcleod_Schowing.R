@@ -40,7 +40,89 @@ data_test = data_norm[test.rows, ]
 
 # b:
 
-# ISRL p 247
+# ISRL p 245
+# Have to convert the data (table) to dataframe
+regfit.full = regsubsets(lpsa ~ ., as.data.frame(data_train))
+reg.summary = summary(regfit.full)
+
+# Display reg.summary
+reg.summary
+
+# Generate plots for R2, adjusted R2, Cp and BIC
+
+plot(reg.summary$rsq, main = "R2", xlab = "Number of features", ylab="R2", type="l")
+
+plot(reg.summary$adjr2, main = "Adjusted R2", xlab = "Number of features", ylab = "Adjusted RSq", type="l")
+
+plot(reg.summary$cp, main = "Cp", xlab = "Number of features", ylab="Cp", type="l")
+
+plot(reg.summary$bic, main = "BIC", xlab = "Number of features", ylab = "BIC", type="l")
+
+# Check for minimum and maximum 
+which.max(reg.summary$adjr2)
+#7
+which.min(reg.summary$cp)
+#7
+which.min(reg.summary$bic)
+#2
+
+# Cp and adjusted R2 select the same 7 features model. Bic select the 2 feature model because it puts more penality on models with more variables.
+
+
+# In reg.summary we see that the 7 features model uses lcavol, lweight, age, lbph svi, lcp and pgg45. 
+
+
+
+
+# Test and train data with the 7 features (without gleason)
+x.train = data_train[, -7]
+y.train = data_train[, 8]
+
+x.test = data_test[, -7]
+y.test = data_test[, 8]
+
+
+# Calculate test and train MSE for this model 
+# ????????????????????????????????????''''
+model <- lm(y.train~x.train,  data=as.data.frame(data_train))
+fit.train = predict(model,as.data.frame(x.train),as.data.frame(y.train))
+
+
+
+# c: 
+
+library(glmnet)
+
+# To store vector of ridge reg. coeff.
+grid=10^seq(10, -2,length =100)
+
+ridge.mod = glmnet(x.train,y.train,alpha =0, lambda =grid)
+
+summary(ridge.mod)
+
+par(mfrow=c(1,1))
+matplot(grid, t(coef(ridge.mod)), type="l", col=seq_len(ncol(t(coef(ridge.mod)))), 
+        main = "Ridge models", xlab="lambda", ylab="Coefficient", xlim=c(0,10))
+
+legend("topright", legend = row.names(coef(ridge.mod)), col=seq_len(ncol(t(coef(ridge.mod)))),
+       cex=0.8, fill=seq_len(ncol(t(coef(ridge.mod)))))
+
+
+# Completely fucked-up but funny !
+#plot(ridge.mod)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
