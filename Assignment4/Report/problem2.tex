@@ -14,7 +14,7 @@ Ridge regression is done by minimizing the RSS with a quadratic penalty term:
 \noindent and:
 \[ y^Ty - 2yX^T\beta^T + X^T\beta^TX\beta + \lambda\beta^T\beta \]
 \noindent We take the first derivative with respect to $\beta$, which gives us:
-\[ 0 + - 2X^Ty + 2(XX^T)\beta  + 2\lambda\beta\] 
+\[ 0 - 2X^Ty + 2(XX^T)\beta  + 2\lambda\beta\] 
 
 \noindent setting this to zero this can be simplified to: 
 \[ 2(XX^T)\beta + 2\lambda\beta = 2X^Ty \]

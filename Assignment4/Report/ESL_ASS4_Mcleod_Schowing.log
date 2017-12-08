@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  8 DEC 2017 08:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  8 DEC 2017 08:40
 entering extended mode
 **./ESL_ASS4_Mcleod_Schowing.tex
 (ESL_ASS4_Mcleod_Schowing.tex
@@ -1502,10 +1502,10 @@ d.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
  ) 
 Here is how much of TeX's memory you used:
- 33013 strings out of 493333
- 757487 string characters out of 3139193
+ 33023 strings out of 493333
+ 757613 string characters out of 3139193
  977012 words of memory out of 3000000
- 35954 multiletter control sequences out of 15000+200000
+ 35962 multiletter control sequences out of 15000+200000
  9839 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,12n,98p,752b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1521,9 +1521,9 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ESL_ASS4_Mcleod_Schowing.pdf (6 pages, 141130 bytes).
+Output written on ESL_ASS4_Mcleod_Schowing.pdf (6 pages, 145613 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 6 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
