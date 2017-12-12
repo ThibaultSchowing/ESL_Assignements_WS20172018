@@ -1,1 +1,44 @@
 \section*{Problem 3}
+
+Assume a scenario in which the number of observations equals the number of features $(n=p)$ and $X$ is the $n \times n$ identity matrix. Furthermore, assume that we perform regression without an intercept. In this setting, lasso simplifies to:
+
+
+
+\[
+\mini_{\beta} \sum_{j=1}^{p} (y_j - \beta_j)^2 + \lambda \sum_{j=1}^{p} |\beta_j| \tag{3.1} \label{3.1}
+\]
+
+Show that the lasso estimates take the form: 
+
+%Use amsmath package
+\[ 
+  \tag{3.2} \label{3.2}
+  \hat{\beta}_{j}^{lasso}=
+  \begin{cases}
+		y_j - \frac{\lambda}{2}, &\text{if } y_j > \frac{\lambda}{2};\\
+		y_j + \frac{\lambda}{2}, &\text{if } y_j < -\frac{\lambda}{2};\\
+		0,                       &\text{if } |y_j| \leq \frac{\lambda}{2};
+	\end{cases} 
+\]
+
+For equation \ref{3.1} to be a minimum, we must derive it and equal it to zero:
+
+\[ 
+\tag{3.3}\label{3.3}
+	\frac{d}{d\beta_j} \sum_{j=1}^{p} (y_j - \beta_j)^2 + \frac{d}{d\beta_j} \lambda \sum_{j=1}^{p} |\beta_j| = 0
+ \]
+ 
+ We can rewrite equation \ref{3.1} with the matrix notation like following:
+ 
+ \[ 
+	 F(\beta) = (y - \beta)^T (y - \beta) + \lambda \beta 
+	 = yy^T - y\beta^T -y^T\beta + \beta\beta^T + \lambda\beta
+  \]
+ 
+ 
+
+ \[ \frac{dF}{d\beta} = -2y + 2\beta + \lambda \]
+ \[ \beta = y - \frac{\lambda}{2} \]
+ 
+ 
+ \[  \]

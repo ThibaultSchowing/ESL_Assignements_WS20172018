@@ -4,17 +4,17 @@
 \noindent Prove that for linear and polynomial least squares regression, the LOOCV estimate for the test MSE can be calculated using the following formula: 
 
 
-\begin{equation}
-\label{LOOCV_shortcut}
-CV_{(n)} = \frac{1}{n} \sum_{i = 1}^{n}\left( \frac{y_i - \hat{y_i}}{1 - h_i} \right)^2
-\end{equation}
+\[ CV_{(n)} = \frac{1}{n} \sum_{i = 1}^{n}\left( \frac{y_i - \hat{y_i}}{1 - h_i} \right)^2 \tag{1.1} \label{LOOCV_shortcut}
+ \]
+
+
 
 \noindent Where $ h_i $ is the leverage (3.37, ISLR p98)
-\begin{equation}
-\label{leverage}
-h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum_{i^{'} = 1}^{n} (x_i^{'} - \bar{x})^2}
-\end{equation}
 
+
+\[ 
+h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum_{i^{'} = 1}^{n} (x_i^{'} - \bar{x})^2} \tag{1.2} \label{leverage}
+\]
 
 \noindent We first have this equation, that can take long if $n$ is big because it has to fit every model.
 
@@ -46,20 +46,24 @@ h_i = \frac{1}{n} + \frac{(x_i - \bar{x})^2}{\sum_{i^{'} = 1}^{n} (x_i^{'} - \ba
 \[ \hat{y}_i = x_i^T [X(X^T X)^{-1} X^T]y \] 
 \[ \hat{y}_{-i} = x_i^T [X_{-i}(X_{-i}^T X_{-i})^{-1} X_{-i}^T]y_{-i} \]
 
-\noindent The fitted values at $ x_i$ when using all the data points and when leaving one out. We can then to the following:
+\noindent The fitted values at $ x_i$ when using all the data points and when leaving one out. We can then do the following:
 
 \[ \hat{y}_{-i} = \sum_{i\neq j}^{} H_{ij} y_j + H_{ii} \hat{y}_{-i} \]
+
 \[ \hat{y}_{-i} = \sum_{j}^{m} H_{ij} y_j - H_{ii} y_i + H_{ii} \hat{y}_{-i} \]
+
+We have $ \sum_{j}^{m} H_{ij} y_j = \hat{y}_{i}$ so:  
+
 \[ \hat{y}_{-i} = \hat{y}_{i} - H_{ii} y_{i} + H_{ii} \hat{y}_{-i}  \]
 
 
-We substitute the in the prediction error: 
+We substitute $ \hat{y}_{-i} $ in the prediction error: 
 
 \[ y_i - \hat{y}_{-i} = y_i - (\hat{y}_{i} - H_{ii} y_{i} + H_{ii} \hat{y}_{-i} ) \]
 \[ y_i - H_{ii}y_{i} - \hat{y}_{-i} - H_{ii}\hat{y}_{-i} = y_i - \hat{y}_i \]
 \[ y_i - \hat{y}_{-i} = \frac{y_i - \hat{y}_{i}}{1 - H_{ii}}\]
 
-Taking the mean square error leads to equation \ref{LOOCV_shortcut}. 
+Taking the Mean Square Error leads to equation \ref{LOOCV_shortcut}. 
 
 
 
