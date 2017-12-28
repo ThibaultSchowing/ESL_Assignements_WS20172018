@@ -17,11 +17,14 @@ The least squares regression model is given by the equation 6.16 and 6.17 of ISR
 	y_i = \theta_0 + \sum_{m = 1}^{M} \theta_m z_{im} + \varepsilon_i,\quad i = 1,...,n \tag{6.17, ISLR} \label{6.17} 
 \]
 
-In the RSS equation, $f(x)$ correspond to the value projected on the first component line.
+In the RSS equation, $f(x)$ correspond to the value projected on the first component line and is given by: $f(x) = \o(x_i - \bar{x})$ (6.19, ISLR). 
 So we have RSS:  
 \[ 
-	RSS = \sum_{i = 1}^{n}(\theta_0 + \sum_{m = 1}^{M} \theta_m z_{im} + \varepsilon_i - f(x_i))^2
+	RSS = \sum_{i = 1}^{n}(\theta_0 + \sum_{m = 1}^{M} \theta_m z_{im} + \varepsilon_i - \o(x_i - \bar{x}))^2
  \]
  
  
  The first component has the highest variance so $Var(f(x))$ is a maximum and so the RSS is minimized. 
+ 
+ %TODO 
+ NOT SURE OF THE $\o(x_i - \bar{x})$ thing !!!!
