@@ -1,0 +1,27 @@
+\section*{Problem 1}
+
+\paragraph{Principal Components Analysis}
+The first principal component is the direction of maximum variance in the data. Show that this first principal component also minimizes the residual sum of squares, which is here the squared distance between the projected data point and the original data point.
+
+The RSS is given by: 
+
+\[ RSS = \sum_{i = 1}^{n}(y_i - f(x_i))^2 \]
+
+The least squares regression model is given by the equation 6.16 and 6.17 of ISRL: 
+
+\[ 
+	Z_m = \sum_{j = 1}^{p}\o_{jm} X_j \tag{6.16, ISLR} \label{6.16}
+ \]
+
+\[ 
+	y_i = \theta_0 + \sum_{m = 1}^{M} \theta_m z_{im} + \varepsilon_i,\quad i = 1,...,n \tag{6.17, ISLR} \label{6.17} 
+\]
+
+In the RSS equation, $f(x)$ correspond to the value projected on the first component line.
+So we have RSS:  
+\[ 
+	RSS = \sum_{i = 1}^{n}(\theta_0 + \sum_{m = 1}^{M} \theta_m z_{im} + \varepsilon_i - f(x_i))^2
+ \]
+ 
+ 
+ The first component has the highest variance so $Var(f(x))$ is a maximum and so the RSS is minimized. 

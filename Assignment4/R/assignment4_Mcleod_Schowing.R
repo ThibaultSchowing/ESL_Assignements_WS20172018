@@ -109,7 +109,7 @@ legend("topright", legend = row.names(coef(ridge.mod)), col=seq_len(ncol(t(coef(
 
 
 # Completely fucked-up but funny !
-#plot(ridge.mod)
+# plot(ridge.mod)
 
 
 
