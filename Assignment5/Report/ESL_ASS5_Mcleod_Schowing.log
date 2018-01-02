@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  28 DEC 2017 14:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6100 64-bit) (preloaded format=pdflatex 2016.11.22)  2 JAN 2018 21:52
 entering extended mode
 **./ESL_ASS5_Mcleod_Schowing.tex
 (ESL_ASS5_Mcleod_Schowing.tex
@@ -1417,9 +1417,6 @@ LaTeX Warning: Command \o invalid in math mode on input line 20.
 
 LaTeX Warning: Command \o invalid in math mode on input line 23.
 
-
-LaTeX Warning: Command \o invalid in math mode on input line 30.
-
 )
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1474,7 +1471,178 @@ l.135 	\include{problem3}
 ]
 \openout2 = `problem4.aux'.
 
- (problem4.tex)
+ (problem4.tex
+<img/pcr.png, id=34, 508.90125pt x 333.245pt>
+File: img/pcr.png Graphic file (type png)
+ <use img/pcr.png>
+Package pdftex.def Info: img/pcr.png used on input line 4.
+(pdftex.def)             Requested size: 418.25368pt x 273.89827pt.
+
+<img/pcr_test.png, id=36, 508.90125pt x 333.245pt>
+File: img/pcr_test.png Graphic file (type png)
+ <use img/pcr_test.png>
+Package pdftex.def Info: img/pcr_test.png used on input line 5.
+(pdftex.def)             Requested size: 508.90001pt x 333.24417pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 3--6
+[]
+ []
+
+
+Overfull \hbox (118.0214pt too wide) in paragraph at lines 3--6
+[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.6 \item F
+           or the partial least squares model, the training error v.s. numbe...
+[5
+
+
+ <./img/pcr.png>] <img/pls_train.png, id=42, 508.90125pt x 333.245pt>
+File: img/pls_train.png Graphic file (type png)
+
+<use img/pls_train.png>
+Package pdftex.def Info: img/pls_train.png used on input line 7.
+(pdftex.def)             Requested size: 418.25368pt x 273.89827pt.
+ <img/pls_test.png, id=43, 508.90125pt x 333.245pt>
+File: img/pls_test.png Graphic file (type png)
+
+<use img/pls_test.png>
+Package pdftex.def Info: img/pls_test.png used on input line 8.
+(pdftex.def)             Requested size: 418.25368pt x 273.89827pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 6--9
+[]
+ []
+
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 6--9
+[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9 \item T
+           he visualizations of just the training set then the whole data se...
+[6 <./img/pcr_test.png>]
+<img/pcr_vis_train.png, id=49, 508.90125pt x 333.245pt>
+File: img/pcr_vis_train.png Graphic file (type png)
+
+<use img/pcr_vis_train.png>
+Package pdftex.def Info: img/pcr_vis_train.png used on input line 10.
+(pdftex.def)             Requested size: 418.25368pt x 273.89827pt.
+
+<img/pcr_vis_all.png, id=50, 508.90125pt x 333.245pt>
+File: img/pcr_vis_all.png Graphic file (type png)
+
+<use img/pcr_vis_all.png>
+Package pdftex.def Info: img/pcr_vis_all.png used on input line 11.
+(pdftex.def)             Requested size: 418.25368pt x 273.89827pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 9--12
+[]
+ []
+
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 9--12
+[] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 \item T
+            he visualizations of just the training set then the whole data s...
+[7 <./img/pls_train.png> <./img/pls_test.png>]
+<img/pls_vis_train.png, id=58, 508.90125pt x 333.245pt>
+File: img/pls_vis_train.png Graphic file (type png)
+
+<use img/pls_vis_train.png>
+Package pdftex.def Info: img/pls_vis_train.png used on input line 13.
+(pdftex.def)             Requested size: 418.25368pt x 273.89827pt.
+
+<img/pls_vis_all.png, id=59, 508.90125pt x 333.245pt>
+File: img/pls_vis_all.png Graphic file (type png)
+
+<use img/pls_vis_all.png>
+Package pdftex.def Info: img/pls_vis_all.png used on input line 14.
+(pdftex.def)             Requested size: 418.25368pt x 273.89827pt.
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 12--15
+[]
+ []
+
+
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 12--15
+[] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 \item F
+            or PCR, the training and test data suggest very different M valu...
+[8 <./img/pcr_vis_train.png> <./img/pcr_vis_all.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 \item F
+            or PCR, the training and test data suggest very different M valu...
+[9 <./img/pls_vis_train.png>])
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1486,10 +1654,8 @@ een already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.137 	\include{problem4}
-                          [5
+                          [10 <./img/pls_vis_all.png>]
 
-
-] 
 AED: lastpage setting LastPage
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
@@ -1503,10 +1669,10 @@ d.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
  ) 
 Here is how much of TeX's memory you used:
- 33018 strings out of 493333
- 757516 string characters out of 3139193
- 975012 words of memory out of 3000000
- 35958 multiletter control sequences out of 15000+200000
+ 33073 strings out of 493333
+ 758488 string characters out of 3139193
+ 974012 words of memory out of 3000000
+ 35998 multiletter control sequences out of 15000+200000
  10147 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  69i,11n,98p,752b,609s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1521,9 +1687,9 @@ s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
 7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on ESL_ASS5_Mcleod_Schowing.pdf (5 pages, 140297 bytes).
+Output written on ESL_ASS5_Mcleod_Schowing.pdf (10 pages, 407210 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 4 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 117 PDF objects out of 1000 (max. 8388607)
+ 9 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
