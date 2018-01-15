@@ -38,7 +38,7 @@ train_mse = array(dim = 100)
 deltas = array(dim = 100)
 i = 1
 
-for(shrkg in seq(0,1,0.01)) {
+for(shrkg in seq(0, 1, 0.01)) {
   boost.hitters = gbm(Salary~.,
                       data=trainset, 
                       distribution = "gaussian", 
@@ -73,8 +73,10 @@ boosting_MSE = min(test_mse)
 
 
 # HERE TODO: Plot test_mse, train_mse and Deltas(x axis) 
-plot(deltas, test_mse)
-plot(deltas, train_mse)
+plot(deltas, test_mse,xlab="Shrinkage Parameter")
+plot(deltas, train_mse,xlab="Shrinkage Parameter")
+
+# Around 0.2 the train error is low and the test error hasn't gone up too fast. 
 
 
 # C
@@ -110,7 +112,7 @@ print(boosting_MSE)
 print(least_square_MSE)
 print(ridge_MSE)
 
-# Boosting MSE is a lot lower than linear regression or ridge
+# Boosting MSE is a lot lower than linear regression or ridge (1/2)
 
 
 # D
