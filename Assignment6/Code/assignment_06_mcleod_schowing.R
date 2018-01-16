@@ -1,4 +1,4 @@
-### Elements of Statistical Learning Exercise sheet 4
+### Elements of Statistical Learning Exercise sheet 6
 
 ## Name:Sarah McLeod and Thibault Schowing
 ## Matriculation number: 2566398 and 2571837
