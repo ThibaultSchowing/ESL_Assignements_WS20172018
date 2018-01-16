@@ -1,4 +1,8 @@
-#Assignment 6
+### Elements of Statistical Learning Exercise sheet 4
+
+## Name:Sarah McLeod and Thibault Schowing
+## Matriculation number: 2566398 and 2571837
+
 rm(list=ls())
 
 library(ISLR)
