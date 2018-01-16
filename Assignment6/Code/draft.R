@@ -21,6 +21,7 @@ testset = completedata[201:nrow(completedata),]
 library(gbm)
 set.seed(1)
 
+# For one boos with the default delta (0.001):
 boost.hitters = gbm(Salary~.,data=trainset, distribution = "gaussian", n.trees=1000, interaction.depth = 4)
 summary(boost.hitters)
 boost.hitters$train.error
@@ -80,8 +81,6 @@ par(new=TRUE)
 par(new=TRUE)
 plot(deltas, train_mse,xlab="Shrinkage Parameter", ylim=c(0,1.5), ylab="")
 
-library(ggplot2)
-ggplot(Data, aes(x,y)) + geom_point() + geom_smooth()
 
 # Around 0.2 the train error is low and the test error hasn't gone up too fast. 
 
@@ -135,9 +134,13 @@ plot(cv.out)
 bestlam=cv.out$lambda.min
 cv.out$lambda
 
-# For linear regression it is LeagueN. In second it is division (with absolute value)
-sort(abs(lm.fit$coefficients))
 
+
+
+
+# For linear regression 
+
+summary(lm.fit)$coefficients
 
 # E
 
@@ -145,6 +148,30 @@ sort(abs(lm.fit$coefficients))
 
 
 # F
+library(randomForest)
+
+# Default parameters
+bag.hitters = randomForest(Salary~.,data=trainset, importance=TRUE)
+
+# Train MSE
+mean(bag.hitters$mse)
+
+salary.bag = predict(bag.hitters, newdata=testset)
+plot(unname(salary.bag), testset$Salary)
+mean(((unname(salary.bag))-testset$Salary)^2)
+
+# Predictors importance
+importance(bag.hitters)
+
+
+
+
+
+
+
+
+
+
 
 
 
