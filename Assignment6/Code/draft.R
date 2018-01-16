@@ -73,8 +73,15 @@ boosting_MSE = min(test_mse)
 
 
 # HERE TODO: Plot test_mse, train_mse and Deltas(x axis) 
-plot(deltas, test_mse,xlab="Shrinkage Parameter")
-plot(deltas, train_mse,xlab="Shrinkage Parameter")
+plot(deltas, test_mse,xlab="Shrinkage Parameter", col="red", ylim=c(0,1.5), ylab="Train MSE (Black) - Test MSE (Red)")
+par(new=TRUE)
+
+#lines(predict(lm(test_mse~deltas+I(deltas^2))), ylim=c(0,1.5))
+par(new=TRUE)
+plot(deltas, train_mse,xlab="Shrinkage Parameter", ylim=c(0,1.5), ylab="")
+
+library(ggplot2)
+ggplot(Data, aes(x,y)) + geom_point() + geom_smooth()
 
 # Around 0.2 the train error is low and the test error hasn't gone up too fast. 
 
