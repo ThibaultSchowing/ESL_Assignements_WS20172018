@@ -69,7 +69,7 @@ dim(ozone)
 # Total: 111 observations
 
 
-# Mean of the columns
+# Mean of the columns - 2 indicates columns
 apply(ozone, 2, mean)
 
 # Range of the columns
